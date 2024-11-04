@@ -1,3 +1,4 @@
+
 class TestComplexNum {
     public static void main(String[] args) {
       /*
@@ -30,5 +31,26 @@ class TestComplexNum {
        *
        * 11) Controllare se l'output corrisponde a quanto preventivato
        */
+      ComplexNum num= new ComplexNum();
+      num.build(3, 5);
+      ComplexNum num2= new ComplexNum();
+      num2.build(7, -4);
+      ComplexNum num3= new ComplexNum();
+      num3.build(-2, 3);
+      ComplexNum num4= new ComplexNum();
+      num4.build(-2, 3);
+      System.out.println(num.toStringRep());
+      System.out.println(num2.toStringRep());
+      System.out.println(num3.toStringRep());
+      System.out.println(num4.toStringRep());
+      num.add(num2);
+      num2.add(num4);
+      System.out.println(num.toStringRep());
+      System.out.println(num2.toStringRep());
+      System.out.println(num3.toStringRep());
+      System.out.println(num4.toStringRep());
+      System.out.println(num3.equal(num));
+      System.out.println(num3.equal(num2));
+      System.out.println(num3.equal(num4));
     }
 }
