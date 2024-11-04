@@ -41,7 +41,7 @@ class ComplexNum {
             if (this.mi>=0) {
                 return this.re + "+" + this.mi+"I";
             }
-            return this.re + " " + this.mi + "I";
+            return this.re + "" + this.mi + "I";
         }
     }
 }
