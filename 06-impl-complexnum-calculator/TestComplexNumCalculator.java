@@ -16,5 +16,7 @@ class TestComplexNumCalculator {
        *
        * 3) Fare altre prove con operazioni a piacere
        */
+      ComplexNumCalculator calc=new ComplexNumCalculator();
+      calc.add(new ComplexNum().build(1, 2); new Comp)
   }
 }
