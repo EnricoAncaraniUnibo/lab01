@@ -17,6 +17,19 @@ class TestComplexNumCalculator {
        * 3) Fare altre prove con operazioni a piacere
        */
       ComplexNumCalculator calc=new ComplexNumCalculator();
-      calc.add(new ComplexNum().build(1, 2); new Comp)
+      ComplexNum num1=new ComplexNum();
+      ComplexNum num2=new ComplexNum();
+      num1.build(1, 2);
+      num2.build(2, 3);
+      ComplexNum num3=calc.add(num1, num2);
+      System.out.println(num3.toStringRep());
+      num1.build(4, 5);
+      num2.build(6, 7);
+      num3=calc.sub(num1, num2);
+      System.out.println(num3.toStringRep());
+      num1.build(8, 2);
+      num2.build(3, 1);
+      num3=calc.mul(num1, num2);
+      System.out.println(num3.toStringRep());
   }
 }

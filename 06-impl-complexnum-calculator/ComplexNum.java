@@ -34,14 +34,14 @@ class ComplexNum {
          */
         if(this.re>=0) {
             if(this.mi>=0) {
-                return "+" + this.re + "+"+this.mi + "I";
+                return "+" + this.re + "+"+ this.mi + "I";
             }
-            return "+" + this.re + this.mi + "I";
+            return "+" + this.re + "" + this.mi + "I";
         } else {
             if (this.mi>=0) {
                 return this.re + "+" + this.mi+"I";
             }
-            return this.re + this.mi + "I";
+            return this.re + " " + this.mi + "I";
         }
     }
 }
